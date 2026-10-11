@@ -70,3 +70,7 @@ The example has one PDF attachment; the prototype supports separate attachments 
 ## Verification
 
 Checked the full sample path from submission through attachment checks, multi-recipient email, approval, and RMC2 payment; missing/conditional requirements, financial difference notes, CSV fields, mobile layout, enlarged text, and preserved comparison versions. All messages and file previews remain simulations. Live Google permissions, original file retrieval, sending, and incoming-email matching remain future integration work.
+
+## Prototype A selected
+
+The current homepage uses Prototype A's original stylesheet, dashboard status cards, full sidebar menu, and navy/orange appearance. The validated workflow adds availment and financial fields plus numbered request steps within that design. `a-layout.js` and `a-layout.css` apply the Prototype A presentation. The original comparison snapshots remain unchanged.
