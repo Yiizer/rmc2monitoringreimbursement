@@ -1,37 +1,28 @@
 # RMC2 reimbursement prototype
 
-This prototype uses fictional people, documents, and messages. No Google account is connected, and no real email can be sent. Reloading or resetting restores the sample data.
+Open the current homepage and choose a request. The numbered steps stay in the sidebar on desktop and appear above the request on smaller screens.
 
-## Start on Home
+1. **Review request:** confirm application details. Open each file inside its requirement, mark it checked, and choose whether to include it in the email. Missing or replacement files stay on this screen.
+2. **Prepare email:** review recipients, CC, message, and attachments. Preview, then send the demo email. Multiple recipients and session drafts are supported.
+3. **Replies & decision:** add a sample reply, read it, and confirm the decision and actual approved amount. Set a follow-up reminder where needed.
+4. **Payment:** add a sample payment email, then confirm the amount reimbursed, date, and processor (AMAPHIL or RMC2). Its email reference is saved in history.
 
-Home answers “What needs to be done?” Each request has one main action: check documents, check missing files, read a reply, or send a follow-up. Overdue follow-ups appear first.
+Amount incurred, approved amount, and amount reimbursed are separate. Approval never automatically becomes payment. Differences between approved and paid amounts require an explanatory note.
 
-Use **All requests** to search by name/reference, status, or received-date range. **Emails** shows the selected demo account’s messages. Other tools remain under **More tools**.
+Home and All requests show the type and date of availment and all three amounts. Paid rows show the processor and payment date. Reports and CSV use these same fields.
 
-## Try the whole flow
+## Earlier designs
 
-1. On Home, choose **Add sample request**, then submit the sample form.
-2. Choose **Documents**. Open each file and choose **File is clear — mark checked**. The next unchecked file opens automatically. Flag unclear files for replacement if needed.
-3. Select the files to include, then choose **2. Prepare email**. Check the recipient, message, and attachments. Choose **Send demo email**.
-4. In the request’s Emails tab, expand **Try a sample department reply** and add a fictional reply.
-5. Read the response and confirm the suggested decision where appropriate.
-6. Under **Details → Update status**, a Paid status requires a payment date and a reason. **History** shows timestamped activity.
+The comparison page links to the current workflow and the unchanged Version A and Version B snapshots.
 
-## Dates
+## Limitations
 
-The sample clock begins on **6 October 2026, 10:30 am, Asia/Manila**. This fixed demo date keeps overdue examples reproducible; it is not a live clock.
+- Fictional people, documents, amounts, and messages only.
+- No Google services are connected; no actual emails are sent or Drive files imported.
+- Fixed demonstration date: 11 October 2026, Asia/Manila.
+- Data, drafts, and settings reset on reload and do not sync across devices.
+- Files are individual simulated attachments; images are not combined into a PDF.
+- One demo sender, without assignment controls.
+- Live email matching, persistence, access controls, original file retrieval, and intended-user testing remain future work.
 
-Received, updated, sent, last-reply, follow-up, treatment, and payment dates have separate meanings. Sending schedules a reminder three calendar days later in this prototype. Set or remove the reminder using **Set follow-up date**. Dates are included in the CSV download. Business-day scheduling is not implemented in this demo.
-
-## Other controls
-
-- Switch between Alex and Sam in the sidebar to explore separate simulated Gmail accounts. This is not authentication or assignment.
-- Match an unmatched email to a request in Emails.
-- Save and reopen the current demo draft. One active draft is supported.
-- Change demo recipients/templates in Settings; add notes; download sample records.
-
-## Downloaded copy
-
-Extract `RMC2-Prototype.zip` and open `index.html`. Keep all JavaScript, CSS, and logo files beside it.
-
-Validation included the document-review gate, send/reply/payment flow, future and due reminders, timestamped history, inclusive date filtering, mobile layout, and 200% text enlargement. Optional WebMCP remains feature-detected; no native supported testing context was available. The design still needs usability feedback from its intended users before production development.
+See Workflow-Source-Mapping.md in the project for the inspected source columns, requirements, and email context.
